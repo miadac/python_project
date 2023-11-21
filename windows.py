@@ -7,6 +7,7 @@ import re
 
 
 
+
 def capture_wifi():
     captured: list[str] = []
     capture_wifi: str = subprocess.run('netsh wlan show profiles', capture_output=True, shell=True).stdout.decode()
